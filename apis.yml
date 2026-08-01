@@ -1,7 +1,31 @@
 aid: rezo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rezo.png
 name: Rezo
-description: Rezo is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rezo.ai is an enterprise customer-experience (CX) company building a unified,
+  agentic-AI contact-center platform. Founded in 2018 in Noida, India by Dr. Rashi
+  Gupta and Dr. Manish Gupta, Rezo automates and augments customer interactions
+  across voice, chat, email, and social channels with AI voice agents, speech and
+  sentiment analytics, real-time agent assist, and robotic process automation,
+  supporting 30+ languages. Its Agentic AI Suite spans customer support, sales, and
+  marketing use cases for enterprises across banking, telecom, e-commerce, and other
+  verticals, with product surfaces including the "Central Data Hub" (my.rezo.ai) and
+  the "Autonomous Conversation Matrix" (az-converse.rezo.ai). Rezo operates offices in
+  India, the USA, and the UAE, and holds ISO 27701:2019 with GDPR compliance. Rezo does
+  not currently publish a public API, developer portal, SDKs, or OpenAPI specification;
+  this profile captures its public identity, trust/compliance posture, and vulnerability
+  disclosure program.
 url: https://raw.githubusercontent.com/api-evangelist/rezo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,57 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Customer Experience
+- Contact Center
+- Conversational AI
+- Agentic AI
+- Customer Support
+- Speech Analytics
+- Automation
 apis: []
+common:
+- type: DomainSecurity
+  url: security/rezo-domain-security.yml
+- type: Website
+  url: https://www.rezo.ai/
+- type: About
+  url: https://www.rezo.ai/about-us
+- type: Blog
+  url: https://www.rezo.ai/our-blogs
+- type: Support
+  url: https://www.rezo.ai/contact-us
+- type: TermsOfService
+  url: https://www.rezo.ai/terms-and-condition
+- type: PrivacyPolicy
+  url: https://www.rezo.ai/privacy-policy
+- type: Login
+  url: https://my.rezo.ai/
+- type: TrustCenter
+  url: https://www.rezo.ai/trust-and-compliance
+- type: Compliance
+  url: https://www.rezo.ai/trust-and-compliance
+- type: VulnerabilityDisclosure
+  url: https://www.rezo.ai/vulnerability-disclosure-program
+- type: Security
+  url: https://www.rezo.ai/vulnerability-disclosure-program
+- type: TrustCenter
+  name: Trust Center detail
+  url: security/rezo-trust-center.yml
+- type: VulnerabilityDisclosure
+  name: Vulnerability disclosure detail
+  url: security/rezo-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/rezo-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
